@@ -102,6 +102,7 @@ def save_image():
         print(f"Error saving image: {e}")
 
 
+# ----------------------------GUI--------------------------
 # Title
 title_frame = Frame(app, bg="#2c3e50")
 title_frame.pack(pady=20)
@@ -120,7 +121,7 @@ url = Text(add_text_frame, height=1, width=52)
 url.config(bg="#34495e", fg="#ecf0f1", relief=FLAT)
 url.pack(side=LEFT, pady=5)
 
-get_img_btn = Button(add_text_frame, text="Get image", bg="#2980b9", width="14", fg="white", pady=4, padx=4, relief=FLAT,
+get_img_btn = Button(add_text_frame, text="Get Image", bg="#2980b9", width="14", fg="white", pady=4, padx=4, relief=FLAT,
                      font=("Arial", 10, "bold"), command=display_image)
 get_img_btn.pack(side=LEFT, pady=5, padx=(10, 40))
 
@@ -137,7 +138,7 @@ canvas_frame.pack(pady=20)
 canvas = Canvas(canvas_frame, width=440, height=300, bg="#7f8c8d", highlightthickness=0)
 canvas.pack()
 
-# Watermark
+# Watermark frame
 wtm_text_frame = Frame(app, bg="#2c3e50")
 wtm_text_frame.pack(pady=10)
 wtm_text_label = Label(wtm_text_frame, text="Watermark text:", fg="#ecf0f1",
@@ -146,10 +147,9 @@ wtm_text_label.pack(side=LEFT, pady=5, padx=10)
 
 wtm_text = Text(wtm_text_frame, height=1, width=36)
 wtm_text.config(bg="#34495e", fg="#ecf0f1", relief=FLAT)
-# wtm_text.insert("end", "enter the watermark text")
 wtm_text.pack(side=LEFT, pady=5)
 
-# save
+# save frame
 save_wtm_frame = Frame(app, bg="#2c3e50")
 save_wtm_frame.pack(pady=20)
 wtm_btn = Button(save_wtm_frame, text="Add Watermark", bg="#27ae60", fg="white", width="14", pady=4, padx=4,
