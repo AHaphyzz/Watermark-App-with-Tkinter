@@ -105,7 +105,7 @@ def save_image():
 # Title
 title_frame = Frame(app, bg="#2c3e50")
 title_frame.pack(pady=20)
-title_label = Label(title_frame, text="Add watermark to your image", fg="#ecf0f1",
+title_label = Label(title_frame, text="Add Watermark to Your Image", fg="#ecf0f1",
                     bg="#2c3e50", font=("Arial", 18, "bold"))
 title_label.pack()
 
